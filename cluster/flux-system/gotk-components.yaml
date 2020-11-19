@@ -845,10 +845,6 @@ spec:
               fieldPath: metadata.namespace
         image: ghcr.io/fluxcd/source-controller-arm64:v0.2.2
         imagePullPolicy: IfNotPresent
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
         name: manager
         ports:
         - containerPort: 9090
@@ -1183,10 +1179,6 @@ spec:
               fieldPath: metadata.namespace
         image: ghcr.io/fluxcd/kustomize-controller-arm64:v0.2.2
         imagePullPolicy: IfNotPresent
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: healthz
         name: manager
         ports:
         - containerPort: 8080
@@ -1641,10 +1633,6 @@ spec:
               fieldPath: metadata.namespace
         image: ghcr.io/fluxcd/helm-controller-arm64:v0.2.1
         imagePullPolicy: IfNotPresent
-        livenessProbe:
-          httpGet:
-            path: /metrics
-            port: http-prom
         name: manager
         ports:
         - containerPort: 8080
