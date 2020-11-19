@@ -849,6 +849,7 @@ spec:
           httpGet:
             path: /
             port: http
+          periodSeconds: 30
         name: manager
         ports:
         - containerPort: 9090
@@ -1187,6 +1188,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
+          periodSeconds: 30  
         name: manager
         ports:
         - containerPort: 8080
@@ -1645,6 +1647,7 @@ spec:
           httpGet:
             path: /metrics
             port: http-prom
+          periodSeconds: 30
         name: manager
         ports:
         - containerPort: 8080
@@ -2157,6 +2160,7 @@ spec:
           httpGet:
             path: /metrics
             port: http-prom
+          periodSeconds: 30
         name: manager
         ports:
         - containerPort: 9090
