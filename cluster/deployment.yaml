@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: app
   namespace: testing
+  annotations:
+      kubernetes.io/change-cause: a ver que pasac
 spec:
   replicas: 3
   selector:
