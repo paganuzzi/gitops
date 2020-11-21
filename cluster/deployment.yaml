@@ -17,8 +17,11 @@ spec:
       - name: app
         image: nginx:alpine
         resources:
+          requests:
+            memory: "20Mi"
+            cpu: "50"
           limits:
-            memory: "12Mi"
-            cpu: "50m"
+            memory: "25Mi"
+            cpu: "60m"
         ports:
         - containerPort: 80
