@@ -16,7 +16,7 @@ spec:
   # Enforce all resources go to this target namespace. If a cluster scoped
   # resource is found the deployment will fail.
   #
-  targetNamespace: fleet-app
+  #targetNamespace: fleet-app
 
   # Any branch can be watched, this field is optional. If not specified the
   # branch is assumed to be master
@@ -44,7 +44,7 @@ spec:
   # - single-path
   # - multiple-paths/*
   paths:
-  - cluster/*
+  - cluster/
 
   # The service account that will be used to perform this deployment.
   # This is the name of the service account that exists in the
