@@ -4,6 +4,7 @@ metadata:
   name: app
   namespace: testing
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: app
