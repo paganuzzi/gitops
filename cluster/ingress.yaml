@@ -5,7 +5,7 @@ metadata:
   namespace: testing
 spec:
   rules:
-  - host: "testing.pi3"
+  - host: "demo.pi3"
     http:
       paths:
       - pathType: Prefix
