@@ -4,7 +4,7 @@ metadata:
   name: app
   namespace: testing
   annotations:
-      kubernetes.io/change-cause: cambio de imagen de nginx a busybox
+      kubernetes.io/change-cause: vuelvo a implementan imagen nginx
 spec:
   replicas: 1
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: busybox:latest
+        image: nginx:alpine
         resources:
           requests:
             memory: "20Mi"
