@@ -4,7 +4,7 @@ metadata:
   name: app
   namespace: testing
   annotations:
-      kubernetes.io/change-cause: a ver que pasac
+      kubernetes.io/change-cause: cambio de imagen de nginx a busybox
 spec:
   replicas: 1
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: nginx:alpine
+        image: busybox:latest
         resources:
           requests:
             memory: "20Mi"
