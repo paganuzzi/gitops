@@ -4,9 +4,9 @@ metadata:
   name: app
   namespace: testing
   annotations:
-      kubernetes.io/change-cause: cambio en limits y resources
+      kubernetes.io/change-cause: vuelvo a 1 replica
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: app
