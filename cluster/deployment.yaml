@@ -4,9 +4,9 @@ metadata:
   name: app
   namespace: testing
   annotations:
-      kubernetes.io/change-cause: vuelvo a implementan imagen nginx
+      kubernetes.io/change-cause: se establece 1 replica
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: app
