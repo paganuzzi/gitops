@@ -5,7 +5,7 @@ metadata:
   namespace: testing
 spec:
   rules:
-  - host: "test.pi3"
+  - host: "test.minikube"
     http:
       paths:
       - pathType: Prefix
