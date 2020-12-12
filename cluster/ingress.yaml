@@ -5,7 +5,7 @@ metadata:
   namespace: testing
 spec:
   rules:
-  - host: "test.minikube"
+  - host: "cluster.paganuzzi.com.ar/testing"
     http:
       paths:
       - pathType: Prefix
