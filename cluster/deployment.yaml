@@ -4,7 +4,7 @@ metadata:
   name: app
   namespace: testing
   annotations:
-      kubernetes.io/change-cause: cambio de imagen a traefik/whoami
+      kubernetes.io/change-cause: cambio de imagen a nginx:alpine
 spec:
   replicas: 1
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: traefik/whoami
+        image: nginx:alpine
         resources:
           requests:
             memory: "50Mi"
